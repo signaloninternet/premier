@@ -1,0 +1,720 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: "Fredoka", system-ui;
+}
+
+#main {
+    padding-top: 0.1px;
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+#nav {
+    height: 6vw;
+    width: 100%;
+    margin-top: 2vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 2px solid #D2691E; /* Chocolate brown */
+    border-bottom: 2px solid #FFD700; /* Golden */
+}
+
+#nav h1 {
+    padding: 0vw 5vw;
+    font-size: 3vw;
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+    text-transform: lowercase;
+    color: #4B0082; /* Indigo */
+}
+
+#nav h2 {
+    height: 100%;
+    width: 20%;
+    border-right: 2px solid #D2691E; /* Chocolate brown */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Fredoka', sans-serif;
+    font-size: 2vw;
+    font-weight: 500;
+    color: #800080; /* Purple */
+}
+
+#nav h2:nth-last-child(1) {
+    width: 10%;
+}
+
+#nav h2:nth-last-child(2) {
+    width: 30%;
+}
+
+#nav h2:nth-last-child(4) {
+    padding-left: 3vw;
+}
+
+.center {
+    height: calc(100% - 8vw);
+    width: 100%;
+    padding: 4vw;
+    position: relative;
+}
+
+.content {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.content video {
+    filter: grayscale(10%);
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.page4 video {
+    filter: grayscale(10%);
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.overlay {
+    z-index: 1;
+    color: white;
+    height: 50%;
+    width: 100%;
+    position: absolute;
+    padding: 0vw 3vw;
+    bottom: 0;
+    background: rgba(75, 0, 130, 0.6); /* Deep indigo instead of black */
+}
+
+.page4 .content .overlay {
+    z-index: 1;
+    color: white;
+    height: 50%;
+    width: 100%;
+    position: absolute;
+    padding: 0vw 3vw;
+    bottom: 0;
+    background: rgba(150, 17, 121, 0.6); /* Deep indigo instead of black */
+}
+
+
+.overlay1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 0.5vw;
+}
+
+.overlay1 h1 {
+    font-size: 4vw;
+    font-weight: 600;
+    color: #FFD700; /* Golden */
+}
+
+.overlay1 h2 {
+    padding: 10px 15px;
+    border-radius: 50%;
+    border: 2px solid #FFD700; /* Golden */
+    font-weight: 500;
+}
+
+.overlay2 {
+    padding-top: 0.5vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 2px solid #FFD700;
+}
+
+.overlay2 h4 {
+    font-size: 2vw;
+    font-weight: 400;
+    color: #FFD700; /* Golden */
+}
+
+.scrolldiv {
+    height: 16vw;
+    width: 100%;
+    white-space: nowrap;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.scrollcontain {
+    height: 100%;
+    width: 100%;
+    display: inline-block;
+    animation-name: anime;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.scrollcontain img {
+    height: 100%;
+    width: 17.5%;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: 1vw;
+    object-position: top;
+}
+
+@keyframes anime {
+    from {
+        transform: translate(0%);
+    }
+    to {
+        transform: translate(-100%);
+    }
+}
+
+.alphabet {
+    margin-top: 20px;
+    height: 6vw;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1vw;
+    padding: 10px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.alphabet h5 {
+    margin-right: 2vw;
+    font-size: 2.5vw;
+    font-weight: 400;
+    font-style: italic;
+    text-transform: uppercase;
+    border-bottom: 2px solid #4B0082;
+    transition: all 0.3s ease;
+}
+
+.alphabet h5:hover {
+    color: #FFD700;
+    border-bottom-color: #FFD700;
+}
+
+.alphabet h6 {
+    background-color: #E6E6FA; /* Lavender */
+    color: #4B0082;
+    border-radius: 50%;
+    padding: 0.4vw 0.7vw;
+    font-size: 1.1vw;
+    font-weight: 300;
+    transition: all 0.3s ease;
+}
+
+.alphabet h6:hover {
+    background-color: #FFD700;
+    border: 2px solid #D2691E;
+    color: white;
+}
+
+.page2 {
+    padding: 5vw;
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    gap: 2vw;
+}
+
+.left, .right {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.left img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.right img {
+    width: 100%;
+    height: 70%;
+    object-fit: cover;
+}
+
+.right-text {
+    display: flex;
+    flex-direction: row;
+    gap: 1vw;
+    height: 30%;
+    padding-top: 1vw;
+}
+
+.right-text h6 {
+    font-size: 1.5vw;
+    font-weight: 600;
+}
+
+.right-text p {
+    font-size: 1vw;
+    font-weight: 300;
+    line-height: 1.5;
+}
+
+.left h3 {
+    font-size: 2.5vw;
+    font-weight: bold;
+    margin-top: 1vw;
+    text-transform: uppercase;
+    letter-spacing: 0.2vw;
+    color: #800080;
+}
+
+.page3 {
+    background-color: #FFEFD5;
+    padding: 0.5vw 5vw;
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    gap: 2vw;
+}
+
+.page4 {
+    background-color: white;
+    padding: 3vw 5vw;
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;  /* Center the video horizontally */
+    align-items: center;  /* Center the video vertically */
+    gap: 2vw;
+}
+
+/* Styling the video */
+.page4 video {
+    max-width: 100%;  /* Ensure the video fits within the page */
+    max-height: 100%; /* Ensure the video doesn't overflow vertically */
+    border-radius: 15px;  /* Smooth rounded corners for the video */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);  /* Soft shadow for depth */
+    object-fit: cover;  /* Ensure the video covers the container without distortion */
+}
+
+
+.page3 .left {
+    width: 40%;
+    background-color: #FFDAB9;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.page3 .right {
+    width: 60%;
+    background-color: #FFDAB9;
+}
+
+.page3 .right img {
+    object-fit: cover;
+    height: 100%;
+    object-position: top;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.circle {
+    margin-top: 6vw;
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.circle i {
+    color: rgb(255, 0, 221);
+    font-size: 5vw;
+}
+
+.text {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text span {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform-origin: 0 0;
+    font-size: 1.2em;
+}
+
+.text-ring {
+    position: relative;
+}
+
+.text-ring [style*=--index] {
+    font-size: calc(var(--font-size, 2) * 1rem);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(calc(360deg / var(--total) * var(--index))) translateY(calc(var(--radius, 5) * -1ch));
+}
+
+.page5 {
+    padding: 4vw;
+    height: 110vh;
+    width: 100%;
+    background-color: #F0F8FF; /* Alice Blue background for a soft look */
+}
+
+.page5 h1 {
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 4vw;
+    font-weight: 700;
+    color: #4B0082; /* Indigo */
+    text-align: center;
+    margin-bottom: 2.5vw;
+    position: relative;
+}
+
+.page5 img {
+    height: 90px;
+    width: 90px;
+    object-position: top;
+    opacity: 0%;
+    border-radius: 50%;
+    object-fit: cover;
+    position: absolute;
+    left: 15%;
+    transition: all ease 0.5s;
+}
+
+#elem:hover img {
+    opacity: 1;
+    left: 30%;
+}
+
+#elem {
+    padding: 1vw 1vw;
+    height: 100px;
+    background: white; /* White background for contrast */
+    border-radius: 10px;
+    margin: 2vw 0;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s; /* Smooth hover effect */
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+#elem .elem-part-2 {
+    width: 40%;
+}
+
+#elem h5 {
+    font-size: 1.5vw;
+    width: 10%;
+    font-weight: 400;
+    color: #800080; /* Purple */
+    margin: 1vw;
+}
+
+.elem-part-2 {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.elem-part-2 h3 {
+    font-size: 2vw;
+    font-weight: 500;
+    color: #D2691E; /* Chocolate brown */
+}
+
+.elem-part-2 h6 {
+    font-size: 1.5vw;
+    font-weight: 400;
+    color: #808080; /* Gray */
+}
+
+/* Hover effects */
+#elem:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+}
+
+.page6 {
+    height: 80vh;
+    width: 100%;
+    padding: 4vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2vw;
+    background-color: white;
+}
+
+.page6 .part1of6 {
+    width: 40%;
+    height: 100%;
+}
+
+.page6 .part2of6 {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: start;
+}
+
+.part1of6 img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.part2of6 h3 {
+    color: #800080;
+    font-size: 2vw;
+    font-weight: bold;
+    margin-bottom: 1vw;
+}
+
+.part2of6 h6 {
+    font-size: 1.2vw;
+    color: goldenrod;
+    margin-bottom: 2vw;
+}
+
+.part2of6 p {
+    font-size: 1vw;
+    line-height: 1.5;
+    margin-bottom: 3vw;
+    color: gray;
+}
+
+.part2of6 .image-2 {
+    display: flex;
+    gap: 1vw;
+}
+
+.part2of6 .image-2 img {
+    height: 45%;
+    object-position: 0% 20%; /* 20% from the left and at the top */
+    width: 48%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+
+.page7 {
+    background-color: white;
+    padding: 3vw 5vw;
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;  /* Center the video horizontally */
+    align-items: center;  /* Center the video vertically */
+    gap: 2vw;
+}
+
+/* Styling the video */
+.page7 video {
+    max-width: 100%;  /* Ensure the video fits within the page */
+    max-height: 100%; /* Ensure the video doesn't overflow vertically */
+    border-radius: 15px;  /* Smooth rounded corners for the video */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);  /* Soft shadow for depth */
+    object-fit: cover;  /* Ensure the video covers the container without distortion */
+}
+
+
+.marque {
+    margin-top: 2vw;
+    width: 100%;
+    white-space: nowrap;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    padding: 1vw;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+
+}
+
+.marque h1 {
+    display: inline-block;
+    font-size: 3vw;
+    text-transform: uppercase;
+    font-weight: 900;
+    -webkit-text-stroke: 2px black;
+    color: transparent;
+    margin-right: 16px;
+    letter-spacing: 2px;
+    animation-name: move;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+
+@keyframes move {
+    from {
+        transform: translateX(0);
+    } 
+    to {
+        transform: translateX(calc(-100% - 20px));
+    }
+}
+
+
+.blog {
+    height: 80vh;
+    width: 100%;
+    padding: 4vw;
+    display: flex;
+    flex-direction: row;
+    gap: 2vw;
+
+}
+
+.blog1 {
+    height: 100%;
+    width: 10%;
+}
+
+.blog1 h3 {
+    text-transform: uppercase;
+    font-size: 3vw;
+}
+
+.blog2 {
+    width: calc(100% - 40% - 10% - 2vw);
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.blog2 img {
+    height: 85%;
+    width: 100%;
+    object-fit: cover;
+}
+
+
+.blog3 {
+    width: calc(100% - 40% - 10% - 2vw);
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.blog3 img {
+    height: 85%;
+    width: 100%;
+    object-fit: cover;
+}
+
+
+/* General Footer Styles */
+footer {
+    background-color: #FFDAB9; /* PeachPuff background for consistency */
+    border-top: 2px solid #D2691E; /* Chocolate brown to match borders */
+    padding: 20px 0;
+    font-family: "Fredoka", sans-serif;
+    font-size: 1vw;
+    color: #4B0082; /* Indigo */
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0 20px;
+}
+
+.footer-section {
+    display: flex;
+    align-items: center;
+}
+
+.footer-logo {
+    font-size: 2.5vw;
+    font-weight: 700;
+    color: #800080; /* Purple for logo */
+    text-decoration: none;
+}
+
+.footer-desc {
+    margin-left: 10px;
+    font-size: 1.2vw;
+    color: #4B0082; /* Indigo */
+}
+
+.footer-section a {
+    color: #4B0082; /* Indigo for links */
+    text-decoration: none;
+    margin-left: 15px;
+    font-size: 1vw;
+}
+
+.footer-section a:hover {
+    text-decoration: underline;
+    color: #FFD700; /* Golden hover effect */
+}
+
+/* Social Icons */
+.footer-socials {
+    display: flex;
+    align-items: center;
+}
+
+.footer-socials a {
+    margin-left: 10px;
+    font-size: 1.8vw;
+    color: #800080; /* Purple */
+}
+
+.footer-socials a:hover {
+    color: #FFD700; /* Golden hover effect */
+}
+
+/* Copyright */
+.footer-copyright {
+    width: 100%;
+    text-align: center;
+    font-size: 1vw;
+    margin-top: 10px;
+    color: #808080; /* Gray */
+}
+
